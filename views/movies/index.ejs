@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>movies#index</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h2>Movie Index Page</h2>
+    <% movies.forEach(m => { %>
+        <ul>
+            <li>
+                Title:
+                <%= m.title %>
+            </li>
+            <li>
+                Release Year:
+                <%= m.releaseYear %>
+            </li>
+            <li>
+                MPAA Rating
+                <%= m.mpaaRating %>
+            </li>
+            <li>
+                Cast
+                <%= m.cast %>
+            </li>
+            <li>
+                Now Showing:
+                <%= m.nowShowing %>
+            </li>
+        </ul>
+    <% }); %>
+  </body>
+</html>
